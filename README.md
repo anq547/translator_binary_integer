@@ -1,0 +1,2 @@
+# translator_binary_integer
+binary2integer and integer2binary
