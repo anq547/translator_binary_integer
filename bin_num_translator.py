@@ -1,4 +1,4 @@
-def binnum(b):
+def bin2num(b):
     x = -1
     y = 1
     ln = []
