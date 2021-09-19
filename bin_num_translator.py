@@ -13,3 +13,30 @@ def bin2num(b):
         y *= 2
 
     return sum(ln)
+
+def num2bin(b):
+    def max_2_multiplier(x):
+        y = 1
+        while (y < x):
+            y *= 2
+        
+        if y > x:
+            return int(y / 2)
+        
+        else:
+            return y
+    
+    l = []
+    ls = []
+    i = max_2_multiplier(b)
+
+    while (i > 0):
+        l.append(b // i)
+        b = (b % i)
+        i = i // 2
+
+    for i in l:
+        ls.append(str(i))
+
+    bin = ''.join(ls)
+    return int(bin)
